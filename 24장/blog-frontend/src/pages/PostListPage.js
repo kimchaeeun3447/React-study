@@ -1,15 +1,17 @@
-import Button from "../components/common/Button";
-import Header from "../components/common/Header";
-import HeaderContainer from "../containers/common/HeaderContainer";
-
 /* 포스트 리스트 라우트 컴포넌트 */
+import React from 'react';
+import HeaderContainer from '../containers/common/HeaderContainer';
+import PostListContainer from '../containers/posts/PostListContainer';
+import PaginationContainer from '../containers/posts/PaginationContainer';
 
 const PostListPage = () => {
-    return (
-    <div>
-        <HeaderContainer />
-        <div> 안녕하세요.</div>
-    </div>);
+  return (
+    <>
+      <HeaderContainer />
+      <PostListContainer />
+      <PaginationContainer />
+    </>
+  );
 };
 
 export default PostListPage;
